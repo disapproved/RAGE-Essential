@@ -23,6 +23,11 @@ namespace RAGEDatabase
 
         }
 
+        public void Start()
+        {
+
+        }
+
         private static LiteDatabase Account_Database = new LiteDatabase("Accounts.db");
         private static Dictionary<Client, Account> AttachedAccounts = new Dictionary<Client, Account>();
 

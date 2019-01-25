@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAGECore", "RAGECore\RAGECo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAGEDatabase", "RAGEDatabase\RAGEDatabase.csproj", "{C015FAEC-9354-4063-960E-FA25ED4BBD0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAGETimers", "RAGETimers\RAGETimers.csproj", "{94C266AF-6FFF-4FF2-A27B-13873755F9CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAGETest", "RAGETest\RAGETest.csproj", "{A9944A59-01B2-4F06-B9A6-211DF6B48855}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C015FAEC-9354-4063-960E-FA25ED4BBD0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C015FAEC-9354-4063-960E-FA25ED4BBD0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C015FAEC-9354-4063-960E-FA25ED4BBD0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C266AF-6FFF-4FF2-A27B-13873755F9CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C266AF-6FFF-4FF2-A27B-13873755F9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C266AF-6FFF-4FF2-A27B-13873755F9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C266AF-6FFF-4FF2-A27B-13873755F9CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9944A59-01B2-4F06-B9A6-211DF6B48855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9944A59-01B2-4F06-B9A6-211DF6B48855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9944A59-01B2-4F06-B9A6-211DF6B48855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9944A59-01B2-4F06-B9A6-211DF6B48855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
