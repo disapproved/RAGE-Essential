@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 
 namespace RAGECore
@@ -18,6 +19,11 @@ namespace RAGECore
     {
         List<object> LoadedModules = new List<object>();
 
+        public T GetModule<T>()
+        {
+            return (T)LoadedModules.FirstOrDefault(x => x.GetType() == typeof(T));
+        }
+
         [ServerEvent(Event.ResourceStart)]
         public void OnResourceStart()
         {
@@ -32,8 +38,8 @@ namespace RAGECore
             foreach(string dll in Directory.GetFiles(path + "\\Modules\\", "*.dll"))
             {
                 Assembly ass = Assembly.LoadFile(dll);
-                Type type = ass.GetExportedTypes()[0]; //check later for epic fail.....
-                if(!typeof(RAGEModule).IsAssignableFrom(type)) //epic fail....
+                Type type = ass.GetExportedTypes().FirstOrDefault(x => typeof(RAGEModule).IsAssignableFrom(x)); //check later for epic fail.....
+                if(type == default(Type)) //epic fail....
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"Error Loading Module -<{type.ToString()}>-: Missing RAGEModule Interface");

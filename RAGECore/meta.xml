@@ -1,4 +1,6 @@
 ﻿<meta>
   <info name="RAGE-Essential-Core" type="script"/>
   <script src="RAGECore.dll"/>
+  <assembly ref="Dependencies\\BCrypt-Core.dll"/>
+  <assembly ref="Dependencies\\LiteDB.dll"/>
 </meta>
